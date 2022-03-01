@@ -68,3 +68,17 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+### To use graphql APIs
+
+create src\db.js file with following content:
+`const github = {
+    baseURL: "https://api.github.com/graphql",
+    username: "vive1994k",
+    headers: {
+        "Content-Type": "application/json",
+        Authorization: "bearer `create-generate-token-and-replace-here`"
+    }
+}
+export default github;`
